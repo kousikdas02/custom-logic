@@ -161,7 +161,7 @@ $('.navbar-nav > li > a[href*="#"]').on('click', function (e) {
   })
   $(document).on('scroll', onScroll)
   function onScroll(event) {
-    var scrollPos = $(document).scrollTop() + 110
+    var scrollPos = $(document).scrollTop() + 160
     $('.navbar-nav > li > a').each(function () {
       var currLink = $(this)
       var refElement = $(currLink.attr('href'))
