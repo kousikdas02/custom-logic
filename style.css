@@ -2408,6 +2408,13 @@ h2{
 }
 
 @media (max-width: 575px) {
+    .contact_input{
+        min-width: initial;
+        width: 100%;
+    }
+    .ftr_logo a{
+        width: 120px;
+    }
 }
 
 @media (max-width: 479px) {
