@@ -1766,10 +1766,11 @@ background: #461BFF;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -15px -20px;
 }
 .contactForm_row > * {
     padding: 0 15px;
+    margin-bottom: 20px;
 }
 .contact_input{
     min-width: 350px;
@@ -1787,35 +1788,10 @@ background: #461BFF;
     width: 100%;
 }
 /* ========== responsive css =========== */
-@media(min-width:576px) {
-    .meanu-search{
-        max-width: 540px;
-        width: 100%;
-   }
-}
-@media(min-width:768px) {
-    .meanu-search{
-        max-width: 720px;
-        width: 100%;
-   }
-}
-@media(min-width:992px) {
-    .meanu-search{
-        max-width: initial;
-        width: initial;
-   }
-}
 
 
-@media(min-width:1025px) {
-    /* navbar*/
-    /* .navbar-nav .clickD {
-        display: none;
-    } */
-    .navbar-nav li.menu-item-has-children:hover>.sub-menu {
-        display: block;
-    }
-}
+
+
 @media(min-width:1400px) {
     .container {
         max-width: 1200px;
@@ -1855,7 +1831,7 @@ h3{
         margin-left: 14px;
     }
     .navbar-brand{
-        width: 150px;
+        width: 100px;
         margin-right: 25px;
     }
     .navbar-nav>li{
@@ -2040,7 +2016,7 @@ h3{
     position: fixed;
     top: 0;
     height: 100% !important; 
-    width: 290px;
+    width: 280px;
     overflow-y: auto;
     transition: inherit !important;
     right: 0;
@@ -2256,7 +2232,7 @@ h2{
 }
 .menu-right{
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .navbar-nav>li>a{
     font-size: 17px;
@@ -2287,8 +2263,8 @@ h2{
 }
 /* homepage end */
 
-.podcast-left{
-    height: 420px;
+.about_row {
+    flex-direction: column-reverse;
 }
 
    
@@ -2384,7 +2360,7 @@ h2{
         margin-bottom: 15px;
     }
     .services-card-single{
-        padding: 39px 35px 70px;
+        padding: 39px 25px 50px;
     }
     .project-left-img{
 
@@ -2423,37 +2399,21 @@ h2{
     body.removeOverflow{
         overflow: initial;
     }
+    .navbar-brand{
+        width: 80px;
+    }
+    .menu-right ul li{
+        padding: 0 5px;
+    }
 }
 
 @media (max-width: 575px) {
 }
 
 @media (max-width: 479px) {
-  .meanu-search select{
-    left: 15px;
-  }
-  .meanu-search{
-    padding: 0 15px;
-  }
-  .meanu-search a{
-    right: 50px;
-  }
-  .latestVideo-behind{
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .latestVideo-video .premium{
-    right: 0;
-      height: 41px;
-  }
-  .latestVideo-video .premium i {
-    max-width: 19px;
-    margin-right: 7px;
-    margin-bottom: 2px;
-}
+  
   .cpy_wrap{
     flex-wrap: wrap;
-    margin-bottom: 30px;
   }
   .cpy_wrap ul{
     margin: 0 auto;
@@ -2469,9 +2429,13 @@ h2{
     }
 }
 @media (max-width: 360px) {
+    .main-head .cmn-btn{
+        font-size: 12px;
+        width: 75px;
+    }
 .navbar-brand{
-    width: 130px;
     margin-right: 10px;
+    width: 70px;
 }
 .podcast-left{
     height: 390px;
